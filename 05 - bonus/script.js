@@ -36,3 +36,28 @@ console.log(say_hello_message);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
+// arrow function
+let say_hello_2 = (word) => {
+
+    // creo una variabile che mi da l'ora attuale
+    let current_hour = new Date().getHours();
+
+    // verifico che ora è 
+    if (current_hour < 13) {
+        // mattina = entro le 13
+        message = `Buongiorno ${name}`;
+
+    } else if ( current_hour < 17) {
+        // pomeriggio = entro le 17
+        message = `Buon pomeriggio ${name}`;
+        
+    } else {
+        // sera = dalle 17 in poi
+        message = `Buonasera ${name}`;
+    };
+
+    return message;
+}
+
+console.log(say_hello_2(name));
