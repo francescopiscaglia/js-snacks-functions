@@ -10,7 +10,7 @@ function log_first_letter(array) {
         const first_letter = array[i][0];
         console.log(first_letter);
     }
-}
+};
 
 
 // Invoca la funzione qui e stampa il risultato in console
@@ -18,3 +18,14 @@ log_first_letter(names);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// arrow function
+let first_letter_arrow = (array) => {
+
+    for (let i = 0; i < array.length; i++) {
+        const first_letter = array[i][0];
+        console.log(first_letter);
+    }
+};
+
+first_letter_arrow(names);
