@@ -16,19 +16,19 @@ function say_hello(word) {
     // verifico che ora è 
     if (current_hour < 13) {
         // mattina = entro le 13
-        message = "Buongiorno";
+        message = `Buongiorno ${name}`;
 
     } else if ( current_hour < 17) {
         // pomeriggio = entro le 17
-        message = "Buon pomeriggio";
-
+        message = `Buon pomeriggio ${name}`;
+        
     } else {
         // sera = dalle 17 in poi
-        message = "Buonasera";
-    }
+        message = `Buonasera ${name}`;
+    };
 
-    return message
-}
+    return message;
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 let say_hello_message = say_hello(name);
