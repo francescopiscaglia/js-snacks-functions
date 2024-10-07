@@ -26,3 +26,24 @@ number_of_vocals(word);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
+
+
+// arrow function
+let vowals_counter = (string) => {
+
+    let vowals = ["a", "e", "i", "o", "u",];
+    let vowals_count = 0;
+    
+    for (let i = 0; i < string.length; i++) {
+        const element = string[i];
+
+        if (vowals.includes(element)) {
+            vowals_count++;
+            console.log(element);
+        } 
+    }
+    
+    console.log(vowals_count);
+}
+
+vowals_counter(word);
