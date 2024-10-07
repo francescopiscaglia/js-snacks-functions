@@ -7,7 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 function log_first_letter(array) {
     
     for (let i = 0; i < array.length; i++) {
-        const first_letter = array[i][0];
+        const first_letter = array[i][0]; // prendi solo la prima lettere degli elementi dell'array perchè è in posizione 0
         console.log(first_letter);
     }
 };
