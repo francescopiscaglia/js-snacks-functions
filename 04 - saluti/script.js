@@ -18,5 +18,5 @@ console.log(function_result);
 
 
 // arrow function
-let get_hello = () => `Ciao ${name}`;
-console.log(get_hello());
+let get_hello = (word) => `Ciao ${name}`;
+console.log(get_hello(name));

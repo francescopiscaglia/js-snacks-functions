@@ -13,6 +13,9 @@ function say_hello(word) {
     // creo una variabile che mi da l'ora attuale
     let current_hour = new Date().getHours();
 
+    // creo la variabile per il messaggio di output
+    let message;
+
     // verifico che ora è 
     if (current_hour < 13) {
         // mattina = entro le 13
@@ -31,9 +34,7 @@ function say_hello(word) {
 };
 
 // Invoca la funzione qui e stampa il risultato in console
-let say_hello_message = say_hello(name);
-console.log(say_hello_message);
-
+console.log(say_hello(name));
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
 
@@ -42,6 +43,9 @@ let say_hello_2 = (word) => {
 
     // creo una variabile che mi da l'ora attuale
     let current_hour = new Date().getHours();
+
+    // creo la variabile per il messaggio di output
+    let message;
 
     // verifico che ora è 
     if (current_hour < 13) {

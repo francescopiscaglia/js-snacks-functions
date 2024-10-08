@@ -4,17 +4,21 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function log_first_letter(array) {
+function get_first_letter(array) {
+
+    let new_array = [];
     
     for (let i = 0; i < array.length; i++) {
         const first_letter = array[i][0]; // prendi solo la prima lettere degli elementi dell'array perchè è in posizione 0
-        console.log(first_letter);
+        new_array.push(first_letter);
     }
+
+    return new_array;
 };
 
 
 // Invoca la funzione qui e stampa il risultato in console
-log_first_letter(names);
+console.log(get_first_letter(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
@@ -22,10 +26,14 @@ log_first_letter(names);
 // arrow function
 let first_letter_arrow = (array) => {
 
+    let new_array = [];
+
     for (let i = 0; i < array.length; i++) {
         const first_letter = array[i][0];
-        console.log(first_letter);
+        new_array.push(first_letter);
     }
+
+    return new_array;
 };
 
-first_letter_arrow(names);
+console.log(first_letter_arrow(names));

@@ -4,46 +4,49 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-function number_of_vocals(string) {
+function number_of_vowels(string) {
 
-    let vowals = ["a", "e", "i", "o", "u",];
-    let vowals_count = 0;
+    // array di vocali
+    let vowels = ["a", "e", "i", "o", "u",];
+    // variabile per il contatore con valore di base 0
+    let vowels_count = 0;
     
     for (let i = 0; i < string.length; i++) {
         const element = string[i];
 
-        if (vowals.includes(element)) {
-            vowals_count++;
+        if (vowels.includes(element)) {
+            // incremeto il contatore di 1
+            vowels_count++;
             console.log(element);
         } 
     }
     
-    console.log(vowals_count);
+    console.log(vowels_count);
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-number_of_vocals(word);
+number_of_vowels(word);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
 
 // arrow function
-let vowals_counter = (string) => {
+let vowels_counter = (string) => {
 
-    let vowals = ["a", "e", "i", "o", "u",];
-    let vowals_count = 0;
+    let vowels = ["a", "e", "i", "o", "u",];
+    let vowels_count = 0;
     
     for (let i = 0; i < string.length; i++) {
         const element = string[i];
 
-        if (vowals.includes(element)) {
-            vowals_count++;
+        if (vowels.includes(element)) {
+            vowels_count++;
             console.log(element);
         } 
     }
     
-    console.log(vowals_count);
+    console.log(vowels_count);
 }
 
-vowals_counter(word);
+vowels_counter(word);

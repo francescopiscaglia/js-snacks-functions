@@ -5,6 +5,8 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 function char_selector(array, character) {
+
+    // creo una variabile con un array vuoto
     let new_array = [];
     
     for (let i = 0; i < array.length; i++) {
@@ -20,12 +22,12 @@ function char_selector(array, character) {
         }
     }
 
-    console.log(new_array);
+    return new_array;
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
-char_selector(names, "A");
+console.log(char_selector(names, "A"));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
@@ -47,7 +49,7 @@ let char_selector_arrow = (array, character) => {
         }
     }
 
-    console.log(new_array);
+    return new_array;
 }
 
-char_selector_arrow(names, "A");
+console.log(char_selector_arrow(names, "A"));
